@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('kd4sAPR7gQ3VGmBDH'); // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
+    </script>
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Barcklan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA DE ...</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/a.jpg" alt="">
+            </div>
+            <h1>Claudio Díaz</h1>
+            <h2>Ingeniero Estadístico</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ovennground/?igsh=bTQ5aXFoZ3o1Y2pq#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/claudio-andres-diaz-vargas"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://barcklan.wordpress.com/"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ACERCA DE ... -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Acerca de ...</h2>
+            <p><span>¡Hola!, soy Barcklan</span>, pero mi nombre real es Claudio Díaz. Soy Ingeniero Estadístico egresado de la Universidad del Bío-Bío y me dedico al análisis de datos y a la visualización de estas
+            con la finalidad de brindar información estadística a partir de bases de datos de libre acceso, las cuales se analizan con el propósito de obtener información estadística relevante.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-08-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+569) 50679980
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cdiazv.ies@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.barcklan.wordpress.com
+                            ---github---
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Concepción, 8va Región, Chile
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                     <!-- SECCIÓN INTERESES -->
+                     <div class="col">
+                       <h3>Intereses</h3>
+                       <div class="contenedor-intereses">
+                            <div class="interes" onclick="mostrarModal('Disfruto mucho de los videojuegos en una parte de mi tiempo libre. :D ')">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me encanta la música... La disfruto bastante... me gusta de todo un poquito... Aunque tengo una inclinación por la música Rock jeje.')">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Viajar es bonito... ya que, en términos generales, me permite conocer nuevas culturas y experiencias. Pero incluso, soy muy feliz en salir con amigos a alguna playa o un lugar bonito para comtemplar el bello paisaje o lugar que nos regala la naturaleza... ;D')">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me gusta mucho la tecnología en sí, pero sin duda admiro bastante los productos Apple y su ecosistema... Por las características y calidades de sus productos y de las innovaciones que nos permite conocer cada año.')">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('<Hacer deportes me ayuda a mantenerme activo y saludable> Soy muy partidario de esas palabras... Aunque no la sigo al pie de la letra... Pero, en cuanto pueda, en mis tiempos libres me dedico a jugar Tenis con mis amigos, me encanta! :D.')">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Leer libros es muy interesante; me encanta aprender cosas nuevas sobre todo lo relacionado con la Informática, Matemática y la Estadística (Ciencia de Datos) ^^.')">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me gustan muchos los autos y su tecnología avanzada. Son muy interesantes... ^^')">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me apasiona capturar momentos, lugares y flores a través de la fotografía. Es hermoso y único!.')">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                
+                    <!-- MODAL -->
+                       <div id="modal" class="modal">
+                           <div class="modal-content">
+                               <span class="close" onclick="cerrarModal()">&times;</span>
+                               <p id="modal-texto"></p>
+                           </div>
+                       </div>
+           </div> 
+           <a href="https://raw.githubusercontent.com/Barcklan/Barcklan-Portafolio/main/Curriculum%20Vitae%20-%20Claudio%20Di%CC%81az.pdf" download>
+           <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+           </button>
+           </a>
+        </div>
+     </section>                  
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje R</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visualización de Datos (Power BI/Tableau)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum Vitae</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Estadística</h4>
+                        <span class="casa">Universidad del Bío-Bío</span>
+                        <span class="fecha">2015 - 2019</span>
+                       
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería Estadística</h4>
+                        <span class="casa">Universidad del Bío-Bío</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>"Éxito Reproductivo de las aves Bandurrias (Theristicus Melanopis) al sur de Chile". -Tesis-</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Digítador Administrativo</h4>
+                        <span class="casa">Clínica Sanatorio Alemán</span>
+                        <span class="fecha">Dic. 2022 - May. 2023 (Concepción, Chile)</span>
+                        <p>- Participación en el proyecto de almacenamiento interno de fichas clínicas mediante Bodegaje Diteco.</p>
+                        <p>- Optimización del manejo documental y aseguramiento de calidad en datos sensibles.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor Estadístico Independiente</h4>
+                        <span class="casa">Universidad de Concepción</span>
+                        <span class="fecha">Oct. 2021 - Abr. 2022 (Concepción, Chile)</span>
+                        <p>- Análisis de datos descriptivos y psicométricos para el proyecto FID UCO 1798 OC.</p>
+                        <p>- Implementación de modelos basados en la teoría de respuesta al ítem (IRT).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ayudante de Investigación</h4>
+                        <span class="casa">Universidad del Bío-Bío</span>
+                        <span class="fecha">2019 - 2020 (Concepción, Chile)</span>
+                        <p>- Colaboración en el proyecto de modelado estadístico para la especie Theristicus Melanopis.</p>
+                        <p>- Análisis de región logística y path analysis para evaluar datos de campo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/logo1.png" alt="Blog">
+                    <div class="overlay">
+                        <a href="https://barcklan.wordpress.com/"> <h3>Análisis de datos</h3> </a>
+                        <p>Blog de Estadística</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/path6.png" alt="">
+                    <div class="overlay">
+                        <a href="https://ovennground.wordpress.com/"> <h3>Enciclopedia Estadística</h3> </a>
+                        <p>Blog Estadística</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://www.google.com"> <h3>Visualización de datos</h3> </a>
+                        <p>Proyectos Personales</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://www.google.com"> <h3>Proyecto A</h3> </a>
+                        <p>Analisis Estadístico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://www.google.com"> <h3>Proyecto B</h3> </a>
+                        <p>Análisis Estadístico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/dib1.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://www.google.com"> <h3>Dibujos Animé</h3> </a>
+                        <p>Dibujos hechos por mí ... :^D (Hobbies)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO (Sólo 1 mensaje por cada correo)</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                 <form id="contactForm" action="http://127.0.0.1:5000/send-email" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
+                    <input type="text" id= phone name="phone" placeholder="Número telefónico">
+                    <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" id="subject" name="subject" placeholder="Tema" required>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                 </form>
+                </div>
+                <!-- Mapa -->                                                                                                                                                
+                <div class="col">
+                    <img src="img/pngegg.png" alt="">
+                    <!--<div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
