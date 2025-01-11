@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/a.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos.css">
@@ -122,9 +123,9 @@
                             <i class="fa-solid fa-book"></i>
                             <span>LIBROS</span>
                             </div>
-                            <div class="interes" onclick="mostrarModal('Me gustan muchos los autos y su tecnología avanzada. Son muy interesantes... ^^')">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <div class="interes" onclick="mostrarModal('Me gusta mucho dibujar cuando me encuentro inspirado en mis tiempos libres... ^^')">
+                            <i class="fa-solid fa-pencil-alt"></i>
+                            <span>DIBUJAR</span>
                             </div>
                             <div class="interes" onclick="mostrarModal('Me apasiona capturar momentos, lugares y flores a través de la fotografía. Es hermoso y único!.')">
                             <i class="fa-solid fa-camera"></i>
@@ -319,25 +320,30 @@
             <h2>PORTAFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="img/logo1.png" alt="Blog">
+                    <img src="img/logo1B.png" alt="Blog">
                     <div class="overlay">
                         <a href="https://barcklan.wordpress.com/"> <h3>Análisis de datos</h3> </a>
                         <p>Blog de Estadística</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/path6.png" alt="">
+                    <img src="img/path6B.png" alt="">
                     <div class="overlay">
                         <a href="https://ovennground.wordpress.com/"> <h3>Enciclopedia Estadística</h3> </a>
-                        <p>Blog Estadística</p>
+                        <p>Blog de Estadística</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/lupa.png" alt="">
-                    <div class="overlay">
-                        <a href="https://www.google.com"> <h3>Visualización de datos</h3> </a>
+                    <img src="img/lupaB.png" alt="">
+                    <div class="overlay" id="visualizacion-datos">
+                        <h3>Visualización de datos</h3>
                         <p>Proyectos Personales</p>
                     </div>
+                    <!-- Botón o tarjeta que abre el modal -->
+                   <!-- <div class="card" id="visualizacion-datos">
+                        <h3>Visualización de datos</h3>
+                        <p>Proyectos Personales</p>
+                    </div> -->
                 </div>
                 <div class="proyecto">
                     <img src="img/p4.jpg" alt="">
@@ -354,7 +360,7 @@
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/logo_dib2.png" alt="">
+                    <img src="img/logo_dib2B.png" alt="">
                     <div class="overlay">
                         <a href="https://barcklan.github.io/Dibujos/"> <h3>Dibujos Animé</h3> </a>
                         <p>Dibujos hechos por mí ... :^D (Hobbies)</p>
@@ -363,7 +369,18 @@
             </div>
         </div>
     </section>
-
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Visualización de Datos</h2>
+            <ul>
+                <li><a href="link1.html" target="_blank">Análisis Estadístico</a></li>
+                <li><a href="link2.html" target="_blank">Análisis Estadístico 2</a></li>
+                <li><a href="link3.html" target="_blank">Análisis Estadístico 3</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
@@ -422,7 +439,7 @@
         </div>
         <p>&copy; 2025 Barcklan. Todos los derechos reservados.</p>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
