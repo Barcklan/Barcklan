@@ -219,8 +219,11 @@ html{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
 }
 
+/* Contenido del modal */
 .modal-content {
     background-color: #0e0808d3;
     margin: 15% auto;
@@ -231,6 +234,7 @@ html{
     max-width: 500px;
     text-align: center;
     animation: fadeIn 0.5s;
+    color: white;
 }
 
 .modal-content p {
@@ -238,6 +242,7 @@ html{
     color: #f7f4f4;
 }
 
+/* Botón de cierre */
 .close {
     color: #aaa;
     float: right;
@@ -247,8 +252,21 @@ html{
 }
 
 .close:hover, .close:focus {
-    color: #000;
+    color: #1ca4b6;
     text-decoration: none;
+}
+.card {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #555;
 }
 
 /* Animación de entrada */
@@ -651,7 +669,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
