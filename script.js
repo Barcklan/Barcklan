@@ -70,7 +70,50 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+// Selecciona el botón y el modal
+const card = document.getElementById("visualizacion-datos");
+const modal1 = document.getElementById("modal1");
+const closeBtn = document.querySelector(".close");
 
+// Abre el modal al hacer clic en el botón
+card.onclick = function () {
+    modal1.style.display = "flex";
+};
+// Cerrar cualquier modal al hacer clic en su X
+document.querySelectorAll(".close").forEach(closeBtn => {
+    closeBtn.onclick = function () {
+        closeBtn.closest(".modal").style.display = "none";
+    };
+});
+// Cierra el modal al hacer clic en la 'X'
+//closeBtn.onclick = function () {
+  //  modal1.style.display = "none";
+//};
+
+// Cierra el modal al hacer clic fuera del contenido
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+};
+//const enlaces = [
+//    { texto: "Análisis Estadístico 1", url: "link1.html" },
+//    { texto: "Análisis Estadístico 2", url: "link2.html" },
+//    { texto: "Análisis Estadístico 3", url: "link3.html" },
+//];
+
+const lista = document.querySelector(".modal-content ul");
+
+// Genera los enlaces dinámicamente
+enlaces.forEach(enlace => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = enlace.url;
+    a.target = "_blank";
+    a.textContent = enlace.texto;
+    li.appendChild(a);
+    lista.appendChild(li);
+});
 document.addEventListener('DOMContentLoaded', function() {
     emailjs.init('PN2IV9-sfadPy25uK'); // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
 
