@@ -51,7 +51,7 @@ Aquí encontrarás algunos de mis proyectos más destacados:
 
 📧 [cdiazv.ies@gmail.com](mailto:cdiazv.ies@gmail.com)  
 🌐 [GitHub - barcklan](https://github.com/barcklan)  
-💼 [Portafolio completo](https://github.com/barcklan/portafolio)
+💼 [Portafolio completo](https://github.com/barcklan/portfolio-profesional)
 
 ---
 
