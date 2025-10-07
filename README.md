@@ -1,4 +1,4 @@
-# 👋 Hola, soy Claudio Andrés Díaz Vargas
+# 👋 Hola, soy Claudio Díaz
 
 💻 Ingeniero en Estadística | Especialista en Machine Learning y Ciencia de Datos  
 
