@@ -33,9 +33,9 @@ Aquí encontrarás algunos de mis proyectos más destacados:
 
 | Proyecto | Descripción | Tecnologías |
 |:---------|:-------------|:-------------|
-| 🔹 [**Sistema de Scoring Crediticio (DNN)**](https://github.com/barcklan/portafolio/tree/main/proyecto1) | Modelo de red neuronal para predecir impago crediticio. | TensorFlow, Keras, SMOTE |
-| 🔹 [**Clasificación de Notas Clínicas (NLP Ético)**](https://github.com/barcklan/portafolio/tree/main/proyecto2) | Clasificación de texto clínico con mitigación de sesgos. | BERT, TF-IDF, LIME |
-| 🔹 [**Interpretabilidad de Modelos (LIME & SHAP)**](https://github.com/barcklan/portafolio/tree/main/proyecto3) | Explicabilidad y auditoría de modelos de predicción médica. | Random Forest, LIME, SHAP |
+| 🔹 [**Sistema de Scoring Crediticio (DNN)**](https://github.com/barcklan/portfolio-profesional/tree/main/proyecto1) | Modelo de red neuronal para predecir impago crediticio. | TensorFlow, Keras, SMOTE |
+| 🔹 [**Clasificación de Notas Clínicas (NLP Ético)**](https://github.com/barcklan/portfolio-profesional/tree/main/proyecto2) | Clasificación de texto clínico con mitigación de sesgos. | BERT, TF-IDF, LIME |
+| 🔹 [**Interpretabilidad de Modelos (LIME & SHAP)**](https://github.com/barcklan/portfolio-profesional/tree/main/proyecto3) | Explicabilidad y auditoría de modelos de predicción médica. | Random Forest, LIME, SHAP |
 
 ---
 
