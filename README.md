@@ -1,16 +1,15 @@
-## Hi there 👋
+# 👋 Hola, soy Claudio Andrés Díaz Vargas
 
-<!--
-**Barcklan/Barcklan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Ingeniero en Estadística | Especialista en Machine Learning y Ciencia de Datos  
 
-Here are some ideas to get you started:
+📊 Apasionado por el análisis, la modelación y la creación de soluciones basadas en datos.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+### 🚀 Proyectos Destacados
+- 🔹 [Sistema de Scoring Crediticio (DNN)](https://github.com/barcklan/portafolio/proyecto1)
+- 🔹 [Clasificación de Notas Clínicas con Enfoque Ético](https://github.com/barcklan/portafolio/proyecto2)
+- 🔹 [Interpretabilidad de Modelos con LIME y SHAP](https://github.com/barcklan/portafolio/proyecto3)
+
+---
+🌱 Actualmente aprendiendo sobre **Modelos Generativos y NLP Ético**.
+📫 Contacto: [cdiazv.ies@gmail.com](mailto:cdiazv.ies@gmail.com)
