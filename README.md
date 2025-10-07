@@ -1,8 +1,9 @@
 <!-- Perfil Profesional - GitHub Overview -->
 
 <p align="center">
-  <img src="https://github.com/barcklan.png" width="150" style="border-radius:50%; margin-bottom:10px;">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="500" alt="data science gif">
 </p>
+
 
 <h2 align="center">👋 ¡Hola! Soy Claudio Andrés Díaz Vargas</h2>
 
