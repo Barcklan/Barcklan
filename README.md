@@ -5,7 +5,7 @@
 </p>
 
 
-<h1 align="center">👋 ¡Hola! Soy Claudio Andrés Díaz Vargas</h1>
+<h1 align="center">👋 ¡Hola! Soy Claudio Díaz</h1>
 
 <p align="center">
   <b>Ingeniero en Estadística</b> especializado en <b>Machine Learning y Ciencia de Datos</b><br>
